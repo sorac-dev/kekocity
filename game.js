@@ -14260,7 +14260,7 @@ function http_reqstodo(url, post_data) {
 
                 ////////consola.log(('part=snippet&maxResults=5&order=relevance&q='+kebusco+'&key=AIzaSyCH-_CQkvTjTeDLegiix_UNYX-pO294j9s'+pagina);
                 kajax({
-                    data: 'part=snippet&maxResults=5&order=relevance&q=' + kebusco + '&key=AIzaSyDsolvC07nr-ixADctgWBG7HxPqRnfyHow' + pagina,
+                    data: 'part=snippet&maxResults=5&order=relevance&q=' + kebusco + '&key=' + pagina,
                     url: 'https://www.googleapis.com/youtube/v3/search',
                     type: 'get',
                     success: function (json) {
@@ -14338,7 +14338,7 @@ function http_reqstodo(url, post_data) {
                 }
             },
             keystv = function () {
-                let todaskeys = ['AIzaSyDsolvC07nr-ixADctgWBG7HxPqRnfyHow', 'AIzaSyDsolvC07nr-ixADctgWBG7HxPqRnfyHow', 'AIzaSyAONX_LNwXTSaZKy-9jp5r3c2qnQHfQtBU'];
+                let todaskeys = [];
                 let randkey = parseInt(getRandomArbitrary(0, todaskeys.length));
 
                 return todaskeys[randkey];
